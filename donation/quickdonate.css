@@ -1,0 +1,157 @@
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+    .main-container {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .sub-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .input-row {
+        margin-bottom: 15px;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+
+    .checkbox-row,
+    .submit-btn-row {
+        width: 100%;
+    }
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    justify-content: center; /* Center the main container horizontally */
+    align-items: center; /* Center the main container vertically */
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/39/Lord_Krishna_and_Radha_in_ISKCON%2C_Pune.jpg'); /* Replace with the actual path to your image */
+    background-size: cover;
+    backdrop-filter: blur(7px);
+}
+
+.qd-main-container {
+    margin: 40px;
+    padding: 20px;
+    border: 5px solid orange;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 900px; /* Add a maximum width to the container if needed */
+    background: linear-gradient(to right, #3498db, #6c5ce7);
+}
+
+.qd-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+}
+
+.qd-sub-container {
+    padding: 5px;
+    text-align: left;
+    margin-right: 30px;
+}
+
+.qd-logo-container {
+    flex: 2; /* Adjust the flex value to control the width of the logo container */
+}
+
+.qd-logo {
+    width: 300px;
+    border: 5px solid orange;
+    border-radius: 10px; /* Add border-radius for a rounded appearance */
+}
+
+.qd-input-row {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.qd-input-row select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.qd-input-row select:hover,
+.qd-input-row select:focus {
+    border-color: orange;
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:hover,
+input:focus {
+    border-color: orange;
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+}
+
+.qd-row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.qd-checkbox-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px; /* Add margin between the checkbox and the button */
+}
+
+.qd-checkbox-label {
+    margin-right: 10px;
+}
+
+.qd-checkbox-input {
+    width: 20px;
+    height: 20px;
+}
+
+.qd-submit-btn-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.qd-submit-btn {
+    background-color: orange;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.qd-submit-btn:hover {
+    background-color: #ff8c00;
+}
